@@ -1,18 +1,9 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
-    color: white;
-    overflow-x: hidden;
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
-}
-
-/* Floating hearts canvas */
-#hearts {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    color: white;
 }
 
 /* Sections */
@@ -21,24 +12,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
 }
 
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
-.sub {
-    font-size: 1.2rem;
-}
-
-.story p {
-    font-size: 1.3rem;
-    line-height: 1.6;
+/* Buttons area */
+.btns {
+    margin-top: 20px;
 }
 
 /* Buttons */
@@ -46,10 +24,9 @@ button {
     padding: 15px 35px;
     font-size: 18px;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     margin: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 #yesBtn {
@@ -57,16 +34,14 @@ button {
     color: #ff4b7d;
 }
 
-#yesBtn:hover {
-    transform: scale(1.15);
-}
-
+/* IMPORTANT — initial position */
 #noBtn {
     background: #ff4b7d;
     color: white;
-    position: absolute;
+    position: relative;
 }
 
+/* Hidden result */
 .hidden {
     display: none;
 }
